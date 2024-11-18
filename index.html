@@ -1,13 +1,39 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather app</title>
-    <!-- Don't forget to link the CSS file here! -->
-  </head>
-  <body>
-    <h1>Weather app</h1>
-  <!-- Don't forget to connect the JavaScript file -->
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="weather-app">
+    <div class="weather-info">
+      <p class="temperature">Loading...</p>
+      <p class="sun-times">sunrise</p>
+      <p class="sun-times">sunset</p>
+    </div>
+    <div class="icon">
+      <img src="assets/noun_Umbrella_2030530.svg" alt="UmbrellaLogo" class="weather-icon umbrella">
+      <img src="assets/noun_Sunglasses_2055147.png" alt="SunglassesLogo" class="weather-icon sunglasses">
+      <img src="assets/noun_Cloud_1188486.png" alt="CloudLogo" class="weather-icon cloud">
+      <img src="assets/snow-vector-icon-png_261816.jpg" alt="SnowflakeLogo" class="weather-icon snowflake"
+        style="display:none;">
+    </div>
+    <div class="message">
+      <p></p>
+    </div>
+    <div class="week-forecast">
+      <div class="day">
+        <span class="day-name">...</span>
+        <span class="temperature">...</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
